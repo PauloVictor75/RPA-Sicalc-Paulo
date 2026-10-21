@@ -7005,7 +7005,7 @@ mouse_event((int)(MouseEventFlags.LEFTUP), 0, 0, 0, 0);]]></code></stage><stage 
         <environment-variable id="SicalcAA_Download" name="SicalcAA_Download" type="text" value="C:\Users\paulo\Documents\Automação\BluePrism\SicalcAA\Download" xmlns="http://www.blueprism.co.uk/product/environment-variable">
             <description>Download das DARFs do sistema</description>
         </environment-variable>
-        <environment-variable id="SicalcAA_EMAIL" name="SicalcAA_EMAIL" type="text" value="seu.email@exemplo.com" xmlns="http://www.blueprism.co.uk/product/environment-variable">
+        <environment-variable id="SicalcAA_EMAIL" name="SicalcAA_EMAIL" type="text" value="seuemail@gmail.com" xmlns="http://www.blueprism.co.uk/product/environment-variable">
             <description>Os e-mails de resultado que será enviado para os analistas.</description>
         </environment-variable>
         <environment-variable id="SicalcAA_Entrada" name="SicalcAA_Entrada" type="text" value="C:\Users\paulo\Documents\Automação\BluePrism\SicalcAA\Entrada" xmlns="http://www.blueprism.co.uk/product/environment-variable">
