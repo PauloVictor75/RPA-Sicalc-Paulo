@@ -1,0 +1,1631 @@
+﻿<process name="RPA Sicalc" version="1.0" bpversion="7.5.1.18099" cpeversion="10.0.136.0" narrative="O processo vai realizar o download de arquivos DARFs no sistema SicalcAA." byrefcollection="true" processrunningmessage="" disableversioning="false" preferredid="473a3021-f593-4ade-a7ab-1de93f680cd6" published="true" published_type="2">
+  <view>
+    <camerax>0</camerax>
+    <cameray>159</cameray>
+    <zoom version="2">1.25</zoom>
+  </view>
+  <preconditions />
+  <endpoint narrative="" />
+  <subsheet subsheetid="6daca604-bd0a-4ca8-8351-7988b03376c2" type="Normal" published="False">
+    <name>Configurações Iniciais</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.5625</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="114e3453-1523-4006-8640-4a3044091481" type="Normal" published="False">
+    <name>Verificar cada item</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>120</cameray>
+      <zoom version="2">1.5625</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="4af35774-1a8d-4dcb-b3bc-8ab426d0ee47" type="Normal" published="False">
+    <name>Login Sicalc</name>
+    <view>
+      <camerax>-49</camerax>
+      <cameray>42</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="8c563b59-e010-46c1-9cf3-3f6ca97e053e" type="Normal" published="False">
+    <name>Obter Dados</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>84</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="006fb2e9-6bef-4efa-87b4-f3c0e1afb42a" type="Normal" published="False">
+    <name>Processar Item</name>
+    <view>
+      <camerax>58</camerax>
+      <cameray>-68</cameray>
+      <zoom version="2">1.5625</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="baa5a9ce-74c7-472f-b6cc-74818a1ada12" type="Normal" published="False">
+    <name>Salvar Arquivo</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="f0d8be35-ca0c-4667-9859-1ce362393bd2" type="Normal" published="False">
+    <name>Mark Completed</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.5625</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="4da591ae-d6f0-4fb5-916d-101c1807fa24" type="Normal" published="False">
+    <name>Mark Exception</name>
+    <view>
+      <camerax>-424.960022</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.5625</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="fd77de04-b400-4636-961a-84c1c3964ff2" type="Normal" published="False">
+    <name>Logout Sicalc</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.5625</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="407e9615-acbc-48f2-b6a1-f7fa4ad948d8" type="Normal" published="False">
+    <name>Enviar E-mail</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>63</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="f0fdd348-c66c-4466-819d-7a14df230729" type="Normal" published="False">
+    <name>Arquivamento</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505" type="Normal" published="False">
+    <name>Verificar Arquivo</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="c07a56d5-d89e-478c-af0c-70952cad7026" type="Normal" published="False">
+    <name>Preparar Próximo DARF</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="7a5c2a58-bc4d-43ba-bc6e-32fcb7b8d8d5" type="Normal" published="False">
+    <name>Esclarecimento ao Contribuinte</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="d3fbe149-267d-4436-920f-5b30553b7dae" type="Normal" published="False">
+    <name>Atualizar Status</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>0</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <subsheet subsheetid="8a50fa40-0c60-4747-8b21-52373279b428" type="Normal" published="False">
+    <name>Atualizar Status - Exception</name>
+    <view>
+      <camerax>0</camerax>
+      <cameray>63</cameray>
+      <zoom version="2">1.25</zoom>
+    </view>
+  </subsheet>
+  <stage stageid="3b79b46e-8418-45df-a62f-803e3c7d10d3" name="Start" type="Start">
+    <display x="15" y="-240" />
+    <onsuccess>5280b2c4-024e-4186-94e1-c5f69dab56e4</onsuccess>
+  </stage>
+  <stage stageid="434d0d71-1851-4565-9593-0f873b7929e7" name="End" type="End">
+    <display x="15" y="330" />
+  </stage>
+  <stage stageid="65df0d07-cbea-4ed2-9654-fa606f226931" name="Stage1" type="ProcessInfo">
+    <display x="-210" y="-120" w="150" h="90" />
+  </stage>
+  <stage stageid="6236808e-2715-4c63-a7f9-71a6fd474b52" name="Login Sicalc" type="SubSheetInfo">
+    <subsheetid>4af35774-1a8d-4dcb-b3bc-8ab426d0ee47</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="c50fb67e-9586-4c5a-8b55-12c731e5c7ec" name="Start" type="Start">
+    <subsheetid>4af35774-1a8d-4dcb-b3bc-8ab426d0ee47</subsheetid>
+    <display x="15" y="-135" />
+    <onsuccess>ab8c77c3-6d58-47d8-afc7-c15c24a47170</onsuccess>
+  </stage>
+  <stage stageid="b1e3f6e6-b467-4eec-8141-3626c8111d42" name="End" type="End">
+    <subsheetid>4af35774-1a8d-4dcb-b3bc-8ab426d0ee47</subsheetid>
+    <display x="15" y="135" />
+  </stage>
+  <stage stageid="12d9f5c8-db07-4060-a1b4-4b43b2c8952e" name="Configurações Iniciais" type="SubSheetInfo">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="81f8e780-53f7-4daa-9777-310116f30d42" name="Start" type="Start">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="15" y="-135" />
+    <onsuccess>857e68f4-af86-4a69-a6e4-6829f42b444e</onsuccess>
+  </stage>
+  <stage stageid="12635af2-08cb-4b3c-abac-26304fafcb33" name="End" type="End">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="15" y="270" />
+  </stage>
+  <stage stageid="d5077ce1-2107-4110-a0ed-7e3dcf13adb7" name="Obter Dados" type="SubSheetInfo">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="e63befdc-9d83-4c3e-89b7-b87a67b0733c" name="Start" type="Start">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <display x="15" y="-135" />
+    <onsuccess>f5da7a7f-eef7-41ed-9b3d-94bb46a8400a</onsuccess>
+  </stage>
+  <stage stageid="748d9ab1-ad5b-463a-b37b-16cdd5b3de2d" name="End" type="End">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <display x="15" y="270" />
+  </stage>
+  <stage stageid="d931c022-dcc8-4fa3-b9eb-e0142fea4cab" name="Processar Item" type="SubSheetInfo">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="bb8621e9-cfd4-44ee-95cc-d3d425603732" name="Start" type="Start">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <display x="-45" y="-105" />
+    <inputs>
+      <input type="text" name="CodReceita" stage="CodReceita" />
+      <input type="text" name="Nome" stage="Nome" />
+      <input type="text" name="Telefone" stage="Telefone" />
+      <input type="text" name="PA" stage="PA" />
+      <input type="text" name="CPF/CNPJ" stage="CPF/CNPJ" />
+      <input type="text" name="Referência" stage="Referência" />
+      <input type="text" name="ValorEmReais" stage="ValorEmReais" />
+      <input type="text" name="Arquivo de Saída" stage="Arquivo de Saída" />
+      <input type="text" name="codigo" stage="codigo" />
+    </inputs>
+    <onsuccess>efc29907-695c-4b1c-85ba-63c1fc20d6cd</onsuccess>
+  </stage>
+  <stage stageid="73cdfdd0-4266-49e1-af40-1aefadb772f3" name="End" type="End">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <display x="-45" y="75" />
+  </stage>
+  <stage stageid="5280b2c4-024e-4186-94e1-c5f69dab56e4" name="Configurações Iniciais" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-195" />
+    <onsuccess>177c20e4-d6b9-40ea-89ac-24d9b7f18990</onsuccess>
+    <processid>6daca604-bd0a-4ca8-8351-7988b03376c2</processid>
+  </stage>
+  <stage stageid="3e30fb2d-5d13-42f4-8c15-b34dab33bc18" name="Login Sicalc" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-90" />
+    <onsuccess>3342285d-8aec-489b-837e-3cb6e6ef5e51</onsuccess>
+    <processid>4af35774-1a8d-4dcb-b3bc-8ab426d0ee47</processid>
+  </stage>
+  <stage stageid="177c20e4-d6b9-40ea-89ac-24d9b7f18990" name="Obter Dados" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-150" />
+    <onsuccess>3e30fb2d-5d13-42f4-8c15-b34dab33bc18</onsuccess>
+    <processid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</processid>
+  </stage>
+  <stage stageid="ff2eea8b-6499-40c3-a83a-ac27bb3d0a2a" name="Processar Item" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="330" y="-180" />
+    <inputs>
+      <input type="text" name="CodReceita" friendlyname="CodReceita" expr="[Data.Cod Receita]" />
+      <input type="text" name="Nome" friendlyname="Nome" expr="[Data.Nome]" />
+      <input type="text" name="Telefone" friendlyname="Telefone" expr="[Data.Telefone]" />
+      <input type="text" name="PA" friendlyname="PA" expr="[Data.PA]" />
+      <input type="text" name="CPF/CNPJ" friendlyname="CPF/CNPJ" expr="[Data.CPF/CNPJ]" />
+      <input type="text" name="Referência" friendlyname="Referência" expr="[Data.Referência]" />
+      <input type="text" name="ValorEmReais" friendlyname="ValorEmReais" expr="[Data.Valor]" />
+      <input type="text" name="Arquivo de Saída" friendlyname="Arquivo de Saída" expr="[SicalcAA_Download] &amp; &quot;\&quot; &amp; [Data.Arquivo de Saída]" />
+      <input type="text" name="codigo" friendlyname="codigo" expr="[Data.Cod Receita]" />
+    </inputs>
+    <onsuccess>da02e8f8-f2d6-477f-9085-a3e1987da22b</onsuccess>
+    <processid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</processid>
+  </stage>
+  <stage stageid="79592731-c3c9-4167-b712-5e988adbf29d" name="Salvar Arquivo" type="SubSheetInfo">
+    <subsheetid>baa5a9ce-74c7-472f-b6cc-74818a1ada12</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="96cabde9-045e-4663-8088-0fae92a8c4dc" name="Start" type="Start">
+    <subsheetid>baa5a9ce-74c7-472f-b6cc-74818a1ada12</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>3d1c1e7b-5714-40d2-a479-8f57ffb6ed67</onsuccess>
+  </stage>
+  <stage stageid="2887ed22-b79c-4fa1-ad09-9654c9564eda" name="End" type="End">
+    <subsheetid>baa5a9ce-74c7-472f-b6cc-74818a1ada12</subsheetid>
+    <display x="15" y="75" />
+  </stage>
+  <stage stageid="da02e8f8-f2d6-477f-9085-a3e1987da22b" name="Salvar Arquivo" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="165" y="120" />
+    <onsuccess>bd178a30-493b-4de4-ad83-a4db7e87c4eb</onsuccess>
+    <processid>baa5a9ce-74c7-472f-b6cc-74818a1ada12</processid>
+  </stage>
+  <stage stageid="0fce3abd-7c97-4ba1-942f-216f328fd367" name="Logout Sicalc" type="SubSheetInfo">
+    <subsheetid>fd77de04-b400-4636-961a-84c1c3964ff2</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="21b25801-77d2-461d-b8a3-df5545ff9f0b" name="Start" type="Start">
+    <subsheetid>fd77de04-b400-4636-961a-84c1c3964ff2</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>6237c3d0-2c52-4c88-950b-00e8e1dd3764</onsuccess>
+  </stage>
+  <stage stageid="debc28f6-dbed-4182-9dc9-1f045b74b24f" name="End" type="End">
+    <subsheetid>fd77de04-b400-4636-961a-84c1c3964ff2</subsheetid>
+    <display x="15" y="75" />
+  </stage>
+  <stage stageid="a95ba6ac-2c64-4a81-9ab9-4689c90abc85" name="Logout Sicalc" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="195" />
+    <onsuccess>1f3edc9e-a5e3-4900-8855-f5838a9bce68</onsuccess>
+    <processid>fd77de04-b400-4636-961a-84c1c3964ff2</processid>
+  </stage>
+  <stage stageid="bd178a30-493b-4de4-ad83-a4db7e87c4eb" name="Verificar Arquivo" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="375" y="150" />
+    <inputs>
+      <input type="collection" name="Dados" friendlyname="Dados" expr="[Data]" />
+    </inputs>
+    <onsuccess>83444999-9ae5-493d-8180-b2eac0a4ae82</onsuccess>
+    <processid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</processid>
+  </stage>
+  <stage stageid="86e01e51-f477-4379-87ba-e6cab2705e07" name="Enviar E-mail" type="SubSheetInfo">
+    <subsheetid>407e9615-acbc-48f2-b6a1-f7fa4ad948d8</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="510c5854-cb40-4649-9a90-8e6b2c48de8f" name="Start" type="Start">
+    <subsheetid>407e9615-acbc-48f2-b6a1-f7fa4ad948d8</subsheetid>
+    <display x="15" y="-60" />
+    <onsuccess>3ba7d85e-af4b-44bd-9710-75ccc7abd4a7</onsuccess>
+  </stage>
+  <stage stageid="f3bd5bf5-0914-4661-935b-30a9ef5a62e0" name="End" type="End">
+    <subsheetid>407e9615-acbc-48f2-b6a1-f7fa4ad948d8</subsheetid>
+    <display x="15" y="105" />
+  </stage>
+  <stage stageid="1f3edc9e-a5e3-4900-8855-f5838a9bce68" name="Enviar E-mail" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="240" />
+    <onsuccess>b7174cea-5e9e-4807-b20f-68a918835c57</onsuccess>
+    <processid>407e9615-acbc-48f2-b6a1-f7fa4ad948d8</processid>
+  </stage>
+  <stage stageid="0f048735-77c0-4a39-a85c-5762d540fde9" name="Arquivamento" type="SubSheetInfo">
+    <subsheetid>f0fdd348-c66c-4466-819d-7a14df230729</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="a7d5966b-7be0-4f82-8659-e54b9f72a509" name="Start" type="Start">
+    <subsheetid>f0fdd348-c66c-4466-819d-7a14df230729</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>9c603064-b0aa-4de2-8627-d1f5f3a3739a</onsuccess>
+  </stage>
+  <stage stageid="16a2afed-ade5-447e-bd7d-ca8daeab1789" name="End" type="End">
+    <subsheetid>f0fdd348-c66c-4466-819d-7a14df230729</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="b7174cea-5e9e-4807-b20f-68a918835c57" name="Arquivamento" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="285" />
+    <onsuccess>434d0d71-1851-4565-9593-0f873b7929e7</onsuccess>
+    <processid>f0fdd348-c66c-4466-819d-7a14df230729</processid>
+  </stage>
+  <stage stageid="7b75e31f-55f4-43b5-801b-18ec50de56f5" name="SicalcAA_Entrada" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-240" y="-30" w="90" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <alwaysinit />
+  </stage>
+  <stage stageid="8385c873-9f30-4127-aeb1-c4aaa35d1811" name="SicalcAA_Download" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-240" y="0" w="90" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <alwaysinit />
+  </stage>
+  <stage stageid="02bd76bb-b7dd-4c93-9954-b6e8692c7268" name="SicalcAA_Saida" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-240" y="30" w="90" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <alwaysinit />
+  </stage>
+  <stage stageid="8a0fde13-b385-438d-b150-e32fe9425e8b" name="SicalcAA_EMAIL" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-240" y="60" w="90" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <alwaysinit />
+  </stage>
+  <stage stageid="b724af09-9bf7-425b-bee3-1db055254554" name="Global" type="Block">
+    <loginhibit onsuccess="true" />
+    <display x="-285" y="-60" w="90" h="195" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="857e68f4-af86-4a69-a6e4-6829f42b444e" name="Verificar pasta de entrada" type="Action">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-90" />
+    <inputs>
+      <input type="text" name="Directory Name" friendlyname="Directory Name" narrative="The directory to check exists" expr="[SicalcAA_Entrada]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Exists" friendlyname="Exists" narrative="True if the directory exists" stage="Pasta existe?" />
+    </outputs>
+    <onsuccess>cf58adb6-d88d-4b21-8043-bffbfd89a62d</onsuccess>
+    <resource object="Utility - File Management" action="Directory Exists" />
+  </stage>
+  <stage stageid="4e1d3e48-ec70-4145-8d38-459c9e588922" name="Pasta existe?" type="Data">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="-240" y="-15" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="cf58adb6-d88d-4b21-8043-bffbfd89a62d" name="Pasta de entrada existe?" type="Decision">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="15" y="-45" />
+    <decision expression="[Pasta existe?]" />
+    <ontrue>ce613042-fb99-4a08-82a5-305738f75970</ontrue>
+    <onfalse>744841ba-d24a-4742-8b7e-cc9c9feac513</onfalse>
+  </stage>
+  <stage stageid="744841ba-d24a-4742-8b7e-cc9c9feac513" name="File Not Found" type="Exception">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="90" y="-45" />
+    <exception localized="yes" type="File Not Found" detail="&quot;Não foi possível identificar a pasta: &quot;&amp;[SicalcAA_Entrada]" />
+  </stage>
+  <stage stageid="ce613042-fb99-4a08-82a5-305738f75970" name="Verificar pasta de saida" type="Action">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="Directory Name" friendlyname="Directory Name" narrative="The directory to check exists" expr="[SicalcAA_Saida]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Exists" friendlyname="Exists" narrative="True if the directory exists" stage="Pasta existe?" />
+    </outputs>
+    <onsuccess>7bfe8ea8-ee8d-49bd-bbe6-8e6a5f80239f</onsuccess>
+    <resource object="Utility - File Management" action="Directory Exists" />
+  </stage>
+  <stage stageid="7bfe8ea8-ee8d-49bd-bbe6-8e6a5f80239f" name="Pasta de saida existe?" type="Decision">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="15" y="45" />
+    <decision expression="[Pasta existe?]" />
+    <ontrue>9f7926f8-7b11-41bc-8846-ede45f7975eb</ontrue>
+    <onfalse>1f91cce4-7837-47ba-893a-ebb824eef0ed</onfalse>
+  </stage>
+  <stage stageid="1f91cce4-7837-47ba-893a-ebb824eef0ed" name="File Not Found" type="Exception">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="90" y="45" />
+    <exception localized="yes" type="File Not Found" detail="&quot;Não foi possível identificar a pasta: &quot;&amp;[SicalcAA_Saida]" />
+  </stage>
+  <stage stageid="9f7926f8-7b11-41bc-8846-ede45f7975eb" name="Verificar pasta de Download" type="Action">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="90" />
+    <inputs>
+      <input type="text" name="Directory Name" friendlyname="Directory Name" narrative="The directory to check exists" expr="[SicalcAA_Download]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Exists" friendlyname="Exists" narrative="True if the directory exists" stage="Pasta existe?" />
+    </outputs>
+    <onsuccess>516d0974-1fdf-44f4-87f2-cc4e9780a806</onsuccess>
+    <resource object="Utility - File Management" action="Directory Exists" />
+  </stage>
+  <stage stageid="516d0974-1fdf-44f4-87f2-cc4e9780a806" name="Pasta de download existe?" type="Decision">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="15" y="135" />
+    <decision expression="[Pasta existe?]" />
+    <ontrue>9110b2f1-0623-42d6-868e-a563a8e5f289</ontrue>
+    <onfalse>bb11994b-e3a6-4425-9d9a-195659730f3e</onfalse>
+  </stage>
+  <stage stageid="bb11994b-e3a6-4425-9d9a-195659730f3e" name="File Not Found" type="Exception">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="90" y="135" />
+    <exception localized="yes" type="File Not Found" detail="&quot;Não foi possível identificar a pasta: &quot;&amp;[SicalcAA_Download]" />
+  </stage>
+  <stage stageid="9110b2f1-0623-42d6-868e-a563a8e5f289" name="Verificar sicalc" type="Action">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="180" />
+    <inputs>
+      <input type="text" name="File Name" friendlyname="File Name" narrative="The name of the file to check" expr="[SicalcAA_Executavel]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Exists" friendlyname="Exists" narrative="True if the file exists" stage="Arquivo Existe?" />
+    </outputs>
+    <onsuccess>4405a11a-7122-4b82-9587-9fa5abc8a77a</onsuccess>
+    <resource object="Utility - File Management" action="File Exists" />
+  </stage>
+  <stage stageid="4405a11a-7122-4b82-9587-9fa5abc8a77a" name="Executavel Sicalc existe?" type="Decision">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="15" y="225" />
+    <decision expression="[Arquivo Existe?]" />
+    <ontrue>12635af2-08cb-4b3c-abac-26304fafcb33</ontrue>
+    <onfalse>65904847-4c78-4986-a27c-e790288a2ad4</onfalse>
+  </stage>
+  <stage stageid="65904847-4c78-4986-a27c-e790288a2ad4" name="File Not Found" type="Exception">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="90" y="225" />
+    <exception localized="yes" type="File Not Found" detail="&quot;Não foi possível identificar o executavel Sicalc: &quot;&amp;[SicalcAA_Executavel]" />
+  </stage>
+  <stage stageid="30d5a71a-87a4-49f7-a89d-98f35f1c75ce" name="SicalcAA_Executavel" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-240" y="90" w="90" h="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <exposure>Environment</exposure>
+    <alwaysinit />
+  </stage>
+  <stage stageid="babdae36-edd2-42ef-9185-073e18c67ee8" name="Arquivo Existe?" type="Data">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <display x="-180" y="-15" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="fedbe811-b21a-47a4-8ddd-45ef3d7fd79a" name="Variavel" type="Block">
+    <subsheetid>6daca604-bd0a-4ca8-8351-7988b03376c2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-270" y="-45" w="120" h="45" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="66fc18b5-a964-475b-a29d-3e47cc300453" name="Utility - Environment::Start Process" type="Action">
+    <subsheetid>4af35774-1a8d-4dcb-b3bc-8ab426d0ee47</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="text" name="Application" friendlyname="Application" narrative="The application or short cut to start" expr="[SicalcAA_Executavel]" />
+      <input type="text" name="Arguments" friendlyname="Arguments" narrative="Any arguments needed for the app" expr="" />
+      <input type="flag" name="Use Shell" friendlyname="Use Shell" narrative="Optional. Boolean value that determines whether the Windows shell should be used to launch the process. Default value is True. If you experience issue launching a process, try changing this value to False." expr="" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Process ID" friendlyname="Process ID" narrative="The unique identifier of the new process." stage="" />
+      <output type="text" name="Process Name" friendlyname="Process Name" narrative="The the name of the process." stage="" />
+    </outputs>
+    <onsuccess>a808baa8-5a7e-42ce-b961-f12c87798a01</onsuccess>
+    <resource object="Utility - Environment" action="Start Process" />
+  </stage>
+  <stage stageid="ab8c77c3-6d58-47d8-afc7-c15c24a47170" name="Utility - Environment::Kill Process" type="Action">
+    <subsheetid>4af35774-1a8d-4dcb-b3bc-8ab426d0ee47</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-90" />
+    <inputs>
+      <input type="text" name="Process Name" friendlyname="Process Name" narrative="The name of the process to kill" expr="&quot;SicalcAA&quot;" />
+      <input type="number" name="Process ID" friendlyname="Process ID" narrative="The unique numeric identifier of a specific process on the system." expr="" />
+    </inputs>
+    <onsuccess>36566555-2fd4-4960-8766-2481eb98e29e</onsuccess>
+    <resource object="Utility - Environment" action="Kill Process" />
+  </stage>
+  <stage stageid="f5da7a7f-eef7-41ed-9b3d-94bb46a8400a" name="Utility - Environment::Kill Process" type="Action">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-90" />
+    <inputs>
+      <input type="text" name="Process Name" friendlyname="Process Name" narrative="The name of the process to kill" expr="&quot;excel&quot;" />
+      <input type="number" name="Process ID" friendlyname="Process ID" narrative="The unique numeric identifier of a specific process on the system." expr="" />
+    </inputs>
+    <onsuccess>334f38fd-ef4d-43d6-a9f4-51a6fb75081f</onsuccess>
+    <resource object="Utility - Environment" action="Kill Process" />
+  </stage>
+  <stage stageid="334f38fd-ef4d-43d6-a9f4-51a6fb75081f" name="MS Excel VBO::Create Instance" type="Action">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="flag" name="Enable Events" friendlyname="Enable Events" narrative="Flag to indicate that events should be enabled / disabled on the attached instance - defaulted to True" expr="True" />
+    </inputs>
+    <outputs>
+      <output type="number" name="handle" friendlyname="handle" narrative="An integer which can be used to identify the created instance in subsequent actions" stage="handle" />
+    </outputs>
+    <onsuccess>ee848be0-d03d-4ad7-a518-05357ec18516</onsuccess>
+    <resource object="MS Excel VBO" action="Create Instance" />
+  </stage>
+  <stage stageid="eb0e328d-d148-4d66-81b8-d9e7888c7963" name="handle" type="Data">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <display x="90" y="-45" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ee848be0-d03d-4ad7-a518-05357ec18516" name="MS Excel VBO::Show" type="Action">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="0" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance which should have its window displayed. The default of zero indicates the currently active instance." expr="[handle]" />
+    </inputs>
+    <onsuccess>f317c7b8-5025-4df1-afa8-be8230613414</onsuccess>
+    <resource object="MS Excel VBO" action="Show" />
+  </stage>
+  <stage stageid="f317c7b8-5025-4df1-afa8-be8230613414" name="MS Excel VBO::Open Workbook" type="Action">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="45" />
+    <inputs>
+      <input type="number" name="Timeout" friendlyname="Timeout" narrative="The time available for the action to complete." expr="" />
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the required workbook should be opened. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="File name" friendlyname="File name" narrative="The path and name of the file which should be opened." expr="[SicalcAA_Entrada] &amp; &quot;\Planilha_Entrada_SicalcAA.xlsx&quot;" />
+      <input type="text" name="Password" friendlyname="Password" narrative="Optional. The password required to open the workbook. This only applies to workbooks that were saved with a password." expr="" />
+      <input type="flag" name="Update Links" friendlyname="Update Links" narrative="Optional. Flag that controls whether external references (links) in the file, such as the reference to other Workbooks, are updated. Default value is True." expr="" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name used by Excel to identify the workbook - usually this is the file name (without the path)." stage="Workbook Name" />
+    </outputs>
+    <onsuccess>2dfc2674-00f6-40fe-9b0c-1836b1de4a08</onsuccess>
+    <resource object="MS Excel VBO" action="Open Workbook" />
+  </stage>
+  <stage stageid="8c5c3154-dd6c-45d6-a330-9af802d44423" name="Workbook Name" type="Data">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <display x="90" y="45" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="b9159584-7744-4944-b7f0-221659c9bb1a" name="Nome da Fila" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-240" y="120" w="90" h="30" />
+    <datatype>text</datatype>
+    <initialvalue xml:space="preserve">RPA Sicalc - Itens</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="2dfc2674-00f6-40fe-9b0c-1836b1de4a08" name="MS Excel VBO::Get Worksheet Name" type="Action">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="90" />
+    <inputs>
+      <input type="number" name="Handle" friendlyname="Handle" narrative="The integer handle identifying the instance on which the number of rows is required. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook" friendlyname="Workbook" narrative="The name of the workbook." expr="[Workbook Name]" />
+      <input type="number" name="Worksheet Position" friendlyname="Worksheet Position" narrative="The position of the worksheet." expr="1" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Worksheet" friendlyname="Worksheet" narrative="The output data - the name of the worksheet." stage="Worksheet" />
+    </outputs>
+    <onsuccess>49bf6a3e-b0e8-4831-915f-2591d49ccf0f</onsuccess>
+    <resource object="MS Excel VBO" action="Get Worksheet Name" />
+  </stage>
+  <stage stageid="4eb9678a-c4ae-4950-8d94-3ca337bfba76" name="Worksheet" type="Data">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <display x="90" y="90" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="49bf6a3e-b0e8-4831-915f-2591d49ccf0f" name="MS Excel VBO::Get Number Of Rows" type="Action">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="135" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the number of rows is required. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name of the workbook on which the number of rows is required. The default empty text value indicates the currently active workbook on the specified instance." expr="[Workbook Name]" />
+      <input type="text" name="Worksheet Name" friendlyname="Worksheet Name" narrative="The name of the worksheet on which the number of rows is required. The default empty text value indicates the currently active sheet on the specified workbook." expr="[Worksheet]" />
+    </inputs>
+    <outputs>
+      <output type="number" name="Number of rows" friendlyname="Number of rows" narrative="The number of rows." stage="Number of rows" />
+    </outputs>
+    <onsuccess>2703ebd5-24f3-43dc-9506-7ef94c88273a</onsuccess>
+    <resource object="MS Excel VBO" action="Get Number Of Rows" />
+  </stage>
+  <stage stageid="109fa966-201d-45e1-8ac5-eec4b12be8b9" name="Number of rows" type="Data">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <display x="90" y="135" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2703ebd5-24f3-43dc-9506-7ef94c88273a" name="MS Excel VBO::Get Worksheet Range As Collection" type="Action">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="180" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the number of rows is required. The default of zero indicates the currently active instance." expr="[handle]" />
+      <input type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name of the workbook on which the number of rows is required. The default empty text value indicates the currently active workbook on the specified instance." expr="[Workbook Name]" />
+      <input type="text" name="Worksheet Name" friendlyname="Worksheet Name" narrative="The name of the worksheet within the specified workbook which should be written to a collection. The default empty text indicates the currently active worksheet within the specified workbook." expr="[Worksheet]" />
+      <input type="text" name="StartCell" friendlyname="StartCell" narrative="The starting cell of the range of interest" expr="&quot;A1&quot;" />
+      <input type="text" name="EndCell" friendlyname="EndCell" narrative="The end cell of the range of interest" expr="&quot;K&quot; &amp; ([Number of rows] - 1)" />
+      <input type="flag" name="Use Header" friendlyname="Use Header" narrative="Optional. This flag states if the Excel collection uses a header, or not. Default value is True." expr="True" />
+      <input type="text" name="fetchDataWithMethod" friendlyname="fetchDataWithMethod" narrative="Optional. Text value that specifies the Excel property that should be checked for the contents of a cell. The possible options are 'Text', 'Value', or 'Value2'. The different options reference different representations of the contens of a cell depending on the value (ex. formatting of dates/currency). For further details, see Microsoft's documentation concerning the Range object. Default value is 'Value'." expr="&quot;Text&quot;" />
+      <input type="flag" name="Use Clipboard" friendlyname="Use Clipboard" narrative="Optional. Flag value that controls whether the range should be copied to the clipboard and parsed into the output Collection. In some cases, this can result in faster processing. Default value is False." expr="False" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Data" friendlyname="Data" narrative="The spreadsheet data from the specified range, as a collection" stage="Data" />
+    </outputs>
+    <onsuccess>c4e6e304-97a9-4dfa-a668-1ff62bcd0739</onsuccess>
+    <resource object="MS Excel VBO" action="Get Worksheet Range As Collection" />
+  </stage>
+  <stage stageid="1c3aa5e3-7c3a-42f5-bebc-0685b90e170b" name="Data" type="Collection">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <display x="-150" y="105" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c4e6e304-97a9-4dfa-a668-1ff62bcd0739" name="Work Queues::Add To Queue" type="Action">
+    <subsheetid>8c563b59-e010-46c1-9cf3-3f6ca97e053e</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>The Data collection contains the items to be added to the queue. The collection may contain single or multiple rows, with each representing an item to be added.
+
+If there is a failure during the process, the queue will be unchanged - i.e. no rows will be loaded even if the error occurred on the last one.
+
+If Defer Until is specified, the items will not be available to be worked until then. Otherwise, they are available immediately.
+
+If the queue has a key field defined, an item added has key data longer than the maximum permitted 255 characters, an error will occur</narrative>
+    <display x="15" y="225" />
+    <inputs>
+      <input type="text" name="Queue Name" friendlyname="Queue Name" narrative="The name of the queue to add items to" expr="[Nome da Fila]" />
+      <input type="collection" name="Data" friendlyname="Data" narrative="A collection containing the data, one row for each item to be added" expr="[Data]" />
+      <input type="datetime" name="Defer Until" friendlyname="Defer Until" narrative="Optionally, the date/time the new item(s) should be deferred until" expr="" />
+      <input type="number" name="Priority" friendlyname="Priority" narrative="Optionally, the priority for the new item(s). Lower numbers represent higher priorities. The default is 0." expr="0" />
+      <input type="text" name="Tags" friendlyname="Tags" narrative="Optionally, a semi-colon-separated set of tags to apply to the queue item(s)" expr="&quot;PA:&quot;&amp;[Data.PA]" />
+      <input type="text" name="Status" friendlyname="Status" narrative="Optionally, the initial status required of the work queue item(s) " expr="&quot;Pendente&quot;" />
+      <input type="number" name="Batch Size" friendlyname="Batch Size" narrative="Optionally, the batch size to use when adding many items to the queue.  A Value of 0 will process all items in one batch.  An empty field will use the default batch size of 1000." expr="">
+        <validator type="BluePrism.AutomateProcessCore.RangeParameterValidation" parameter="0:25000" />
+      </input>
+      <input type="timespan" name="SLA" friendlyname="SLA" narrative="Optionally, the SLA that specifies the agreed-upon response or resolution time for the item(s), indicating the maximum acceptable duration for processing them based on their criticality or urgency.&#xD;&#xA;SLA values are provided as a timespan with a minimum value of 1 second and a maximum value of 999 days, 23 hours, 59 minutes, and 59 seconds.&#xD;&#xA;There is no default value for SLA if one is not provided." expr="" />
+      <input type="datetime" name="SLA Deadline" friendlyname="SLA Deadline" narrative="Optionally, the SLA Deadline specifies the agreed-upon response or resolution time for the item(s),&#xD;&#xA;indicating an explicitly set date for addressing them based on their criticality or urgency.&#xD;&#xA;SLA Deadline values are provided as a DateTime which must be less than 1000 days in the future.&#xD;&#xA;There is no default value for SLA Deadline if one is not provided. This value will override any&#xD;&#xA;value provided in the SLA input." expr="" />
+    </inputs>
+    <outputs>
+      <output type="collection" name="Item IDs" friendlyname="Item IDs" narrative="The IDs of the items which have been added to the queue, in the order of the collection of data passed that was input" stage="" />
+    </outputs>
+    <onsuccess>748d9ab1-ad5b-463a-b37b-16cdd5b3de2d</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Add To Queue" />
+  </stage>
+  <stage stageid="52b9fea8-2a4e-4b32-9ac2-f77906a882c6" name="Utility - Environment::Kill Process" type="Action">
+    <subsheetid>fd77de04-b400-4636-961a-84c1c3964ff2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <inputs>
+      <input type="text" name="Process Name" friendlyname="Process Name" narrative="The name of the process to kill" expr="&quot;SicalcAA&quot;" />
+      <input type="number" name="Process ID" friendlyname="Process ID" narrative="The unique numeric identifier of a specific process on the system." expr="" />
+    </inputs>
+    <onsuccess>4ce4a5f0-c1b1-415d-b0f6-727d9a5f9712</onsuccess>
+    <resource object="Utility - Environment" action="Kill Process" />
+  </stage>
+  <stage stageid="6237c3d0-2c52-4c88-950b-00e8e1dd3764" name="Utility - General::Sleep" type="Action">
+    <subsheetid>fd77de04-b400-4636-961a-84c1c3964ff2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-60" />
+    <inputs>
+      <input type="number" name="Sleep Time (Seconds)" friendlyname="Sleep Time (Seconds)" narrative="The time (in seconds) for which to sleep" expr="3" />
+    </inputs>
+    <onsuccess>52b9fea8-2a4e-4b32-9ac2-f77906a882c6</onsuccess>
+    <resource object="Utility - General" action="Sleep" />
+  </stage>
+  <stage stageid="4ce4a5f0-c1b1-415d-b0f6-727d9a5f9712" name="Utility - Environment::Kill Process" type="Action">
+    <subsheetid>fd77de04-b400-4636-961a-84c1c3964ff2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="30" />
+    <inputs>
+      <input type="text" name="Process Name" friendlyname="Process Name" narrative="The name of the process to kill" expr="&quot;excel&quot;" />
+      <input type="number" name="Process ID" friendlyname="Process ID" narrative="The unique numeric identifier of a specific process on the system." expr="" />
+    </inputs>
+    <onsuccess>debc28f6-dbed-4182-9dc9-1f045b74b24f</onsuccess>
+    <resource object="Utility - Environment" action="Kill Process" />
+  </stage>
+  <stage stageid="7d3bbd79-7c87-456d-8141-fe9b8db7d478" name="Work Queues::Get Next Item" type="Action">
+    <narrative>This action gets the next item to be worked from the queue, returning its details and locking it so no other case can work it.
+
+Items with higher priorities (lower numerical value) are processed first. Where the priority is the same, the next item is the one that has been in the queue the longest,  is not already locked, and is not already completed.
+
+The Item ID returned is used to make further calls to update the work status for that item. It may be empty, in which case there are no items available. This can mean either a) the queue is empty, or b) the queue is not running. This mechanism can be used to cleanly stop all processes working a particular queue at the end of the next case. Items that have a 'deferred' time set will not be returned unless that time has been reached.</narrative>
+    <display x="15" y="75" />
+    <inputs>
+      <input type="text" name="Queue Name" friendlyname="Queue Name" narrative="The name of the queue" expr="[Nome da Fila]" />
+      <input type="text" name="Key Filter" friendlyname="Key Filter" narrative="Optionally, a key value to filter by. Only items with this key value will be considered." expr="" />
+      <input type="text" name="Tag Filter" friendlyname="Tag Filter" narrative="Optionally, a tag mask to filter by. This can consist of any number of tag searches - each term can be separated by a semi-colon and they are all applied to the search (ie. they are AND'ed terms not OR'ed terms). For example, &quot;Account: Joint; -Balance: Overdrawn; Card: *Visa*&quot; will include any items which match all the terms, ie. every item must have an 'Account: Joint' tag applied, no item can have a 'Balance: Overdrawn' tag applied, every item must have a tag applied which starts with 'Card: ' and then contains the text 'Visa'." expr="" />
+      <input type="text" name="Sort Order" friendlyname="Sort Order" narrative="Sort order method (Priority, SLA, PriorityAndSLA)" lookupValue="Priority" lookupType="WorkQueueSortTypes" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Item ID" friendlyname="Item ID" narrative="The ID of the item retrieved - empty if there are none available." stage="Item ID" />
+      <output type="collection" name="Data" friendlyname="Data" narrative="The data associated with the item - a single collection row." stage="Data" />
+      <output type="text" name="Status" friendlyname="Status" narrative="The status of the item." stage="Status" />
+      <output type="number" name="Attempts" friendlyname="Attempts" narrative="The number of attempts already made to work this item." stage="" />
+    </outputs>
+    <onsuccess>fac8e0a0-303b-4c6d-a9e8-89196d4e5658</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Get Next Item" />
+  </stage>
+  <stage stageid="3575d21c-1df8-46fb-bba8-afa8c1b199b2" name="Item ID" type="Data">
+    <display x="-135" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="eabe583c-8cf0-471e-a58c-c4e33da76f4f" name="Data" type="Collection">
+    <display x="-135" y="-30" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="7e1b5026-50ab-4b69-ac2f-de33499632de" name="Status" type="Data">
+    <display x="-135" y="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f2efd71b-2ff5-4e11-94b2-b9ee786c7354" name="Fila" type="Block">
+    <loginhibit onsuccess="true" />
+    <display x="-165" y="-60" w="60" h="105" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="fac8e0a0-303b-4c6d-a9e8-89196d4e5658" name="Existe item na fila?" type="Decision">
+    <display x="15" y="135" />
+    <decision expression="[Item ID] &lt;&gt; &quot;&quot;" />
+    <ontrue>6164325d-b35d-4cb3-a8b7-a6ed2c5f5838</ontrue>
+    <onfalse>a95ba6ac-2c64-4a81-9ab9-4689c90abc85</onfalse>
+  </stage>
+  <stage stageid="4f059c82-fdc4-448a-9068-33de2045c70d" name="Verificar cada item" type="SubSheetInfo">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="-225" y="-150" w="150" h="90" />
+  </stage>
+  <stage stageid="a8d21066-ad95-47cb-a102-ee373994b271" name="Start" type="Start">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="-150" />
+    <inputs>
+      <input type="collection" name="Dados do item" stage="Dados do item" />
+    </inputs>
+    <onsuccess>71923d42-04df-4495-9330-302b750e8e6e</onsuccess>
+  </stage>
+  <stage stageid="c1fdffef-7d33-492c-9115-ab7b9b3699e5" name="End" type="End">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="315" />
+  </stage>
+  <stage stageid="98640afc-61b5-4eaa-a199-ebac7ef3f9ed" name="Mark Completed" type="SubSheetInfo">
+    <subsheetid>f0d8be35-ca0c-4667-9859-1ce362393bd2</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="1c5437be-480f-4688-ad65-b7b16d5aa987" name="Start" type="Start">
+    <subsheetid>f0d8be35-ca0c-4667-9859-1ce362393bd2</subsheetid>
+    <display x="15" y="-135" />
+    <inputs>
+      <input type="text" name="Item ID" stage="Item ID" />
+      <input type="collection" name="Dados" stage="Dados" />
+    </inputs>
+    <onsuccess>488fcc4e-2f60-4823-b535-9cfea7d3b918</onsuccess>
+  </stage>
+  <stage stageid="a4d7978a-e0fc-4537-a39d-caf36fab3288" name="End" type="End">
+    <subsheetid>f0d8be35-ca0c-4667-9859-1ce362393bd2</subsheetid>
+    <display x="30" y="0" />
+  </stage>
+  <stage stageid="479f1d39-2aa8-4ebc-adc3-cb03e5cdb759" name="Mark Exception" type="SubSheetInfo">
+    <subsheetid>4da591ae-d6f0-4fb5-916d-101c1807fa24</subsheetid>
+    <display x="-270" y="-120" w="150" h="90" />
+  </stage>
+  <stage stageid="330bb167-6038-4a58-8dee-f92303b1604d" name="Start" type="Start">
+    <subsheetid>4da591ae-d6f0-4fb5-916d-101c1807fa24</subsheetid>
+    <display x="15" y="-180" />
+    <inputs>
+      <input type="text" name="Exception" stage="Exception" />
+      <input type="text" name="Item ID" stage="Item ID" />
+      <input type="collection" name="Dados" stage="Dados" />
+    </inputs>
+    <onsuccess>b993e232-9921-4e12-be55-5fde7175f7b9</onsuccess>
+  </stage>
+  <stage stageid="ac6bb518-e625-4fde-9405-6b973d799582" name="End" type="End">
+    <subsheetid>4da591ae-d6f0-4fb5-916d-101c1807fa24</subsheetid>
+    <display x="15" y="75" />
+  </stage>
+  <stage stageid="43e354ee-0d7a-47be-b006-d779be6c297a" name="Item anterior com erro" type="Calculation">
+    <subsheetid>4da591ae-d6f0-4fb5-916d-101c1807fa24</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="0" />
+    <onsuccess>ac6bb518-e625-4fde-9405-6b973d799582</onsuccess>
+    <calculation expression="True" stage="Item anterior com erro" />
+  </stage>
+  <stage stageid="d95eee04-440e-4e1d-abeb-7e775d709df3" name="Item anterior com erro" type="Data">
+    <display x="-150" y="180" />
+    <datatype>flag</datatype>
+    <initialvalue>False</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="c71a5ccd-cbec-416f-b585-8096d94fe012" name="Exceção" type="Block">
+    <loginhibit onsuccess="true" />
+    <display x="60" y="15" w="135" h="75" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="4981840f-146e-4bb0-8055-a5fe1518efd1" name="Recover1" type="Recover">
+    <loginhibit />
+    <display x="480" y="165" />
+    <onsuccess>ebf8bb68-fb0d-474e-b0cb-a1056f19a1a5</onsuccess>
+  </stage>
+  <stage stageid="ebf8bb68-fb0d-474e-b0cb-a1056f19a1a5" name="Obter Exceções" type="MultipleCalculation">
+    <loginhibit onsuccess="true" />
+    <display x="480" y="90" />
+    <onsuccess>f819d447-c858-4c15-887c-61efb3761396</onsuccess>
+    <steps>
+      <calculation expression="ExceptionDetail()" stage="Exception Detail" />
+      <calculation expression="ExceptionType()" stage="Exception Type" />
+    </steps>
+  </stage>
+  <stage stageid="41a2b816-4552-4206-b630-aa6a870ba436" name="Resume1" type="Resume">
+    <loginhibit />
+    <display x="630" y="30" />
+    <onsuccess>7d3bbd79-7c87-456d-8141-fe9b8db7d478</onsuccess>
+  </stage>
+  <stage stageid="3f88e4e6-5429-453e-b965-ad0c812982be" name="Mark Exception" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="540" y="-210" />
+    <inputs>
+      <input type="text" name="Exception" friendlyname="Exception" expr="[Exception Detail]" />
+      <input type="text" name="Item ID" friendlyname="Item ID" expr="[Item ID]" />
+      <input type="collection" name="Dados" friendlyname="Dados" expr="[Data]" />
+    </inputs>
+    <onsuccess>41a2b816-4552-4206-b630-aa6a870ba436</onsuccess>
+    <processid>4da591ae-d6f0-4fb5-916d-101c1807fa24</processid>
+  </stage>
+  <stage stageid="36566555-2fd4-4960-8766-2481eb98e29e" name="Utility - General::Sleep" type="Action">
+    <subsheetid>4af35774-1a8d-4dcb-b3bc-8ab426d0ee47</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="number" name="Sleep Time (Seconds)" friendlyname="Sleep Time (Seconds)" narrative="The time (in seconds) for which to sleep" expr="5" />
+    </inputs>
+    <onsuccess>66fc18b5-a964-475b-a29d-3e47cc300453</onsuccess>
+    <resource object="Utility - General" action="Sleep" />
+  </stage>
+  <stage stageid="a808baa8-5a7e-42ce-b961-f12c87798a01" name="Utility - General::Sleep" type="Action">
+    <subsheetid>4af35774-1a8d-4dcb-b3bc-8ab426d0ee47</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="45" />
+    <inputs>
+      <input type="number" name="Sleep Time (Seconds)" friendlyname="Sleep Time (Seconds)" narrative="The time (in seconds) for which to sleep" expr="7" />
+    </inputs>
+    <onsuccess>b1e3f6e6-b467-4eec-8141-3626c8111d42</onsuccess>
+    <resource object="Utility - General" action="Sleep" />
+  </stage>
+  <stage stageid="3d1c1e7b-5714-40d2-a479-8f57ffb6ed67" name="Note2" type="Note">
+    <subsheetid>baa5a9ce-74c7-472f-b6cc-74818a1ada12</subsheetid>
+    <narrative>Verificar se arquivo DARF já existe</narrative>
+    <display x="15" y="-60" w="90" h="30" />
+    <onsuccess>6d69c6ba-67d4-4bc9-b72f-a6c7d4a71a34</onsuccess>
+  </stage>
+  <stage stageid="6d69c6ba-67d4-4bc9-b72f-a6c7d4a71a34" name="Note2" type="Note">
+    <subsheetid>baa5a9ce-74c7-472f-b6cc-74818a1ada12</subsheetid>
+    <narrative>Salvar Saída de Impressão Como</narrative>
+    <display x="15" y="-15" w="90" h="30" />
+    <onsuccess>12098209-5d1f-44a7-8094-0ee84f377f5d</onsuccess>
+  </stage>
+  <stage stageid="12098209-5d1f-44a7-8094-0ee84f377f5d" name="Note2" type="Note">
+    <subsheetid>baa5a9ce-74c7-472f-b6cc-74818a1ada12</subsheetid>
+    <narrative>Verificar se download do arquivo DARF foi feito</narrative>
+    <display x="15" y="30" w="120" h="30" />
+    <onsuccess>2887ed22-b79c-4fa1-ad09-9654c9564eda</onsuccess>
+  </stage>
+  <stage stageid="488fcc4e-2f60-4823-b535-9cfea7d3b918" name="Work Queues::Mark Completed" type="Action">
+    <subsheetid>f0d8be35-ca0c-4667-9859-1ce362393bd2</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>Marks the item as completed, by updating the Completed timestamp and setting Locked to null. The item must be 'owned' by the calling process - i.e. it must have been retrieved using Get Next Item.</narrative>
+    <display x="15" y="-75" />
+    <inputs>
+      <input type="text" name="Item ID" friendlyname="Item ID" narrative="The ID of the item to mark" expr="[Item ID]" />
+    </inputs>
+    <onsuccess>a4d7978a-e0fc-4537-a39d-caf36fab3288</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Mark Completed" />
+  </stage>
+  <stage stageid="b993e232-9921-4e12-be55-5fde7175f7b9" name="Work Queues::Mark Exception" type="Action">
+    <subsheetid>4da591ae-d6f0-4fb5-916d-101c1807fa24</subsheetid>
+    <loginhibit onsuccess="true" />
+    <narrative>Marks the item as an exception, optionally retrying it by cloning the item and returning the ID of the clone. The item must be 'owned' by the calling process - i.e. it must have been retrieved using Get Next Item.</narrative>
+    <display x="15" y="-75" />
+    <inputs>
+      <input type="text" name="Item ID" friendlyname="Item ID" narrative="The ID of the item to mark" expr="[Item ID]" />
+      <input type="text" name="Exception Reason" friendlyname="Exception Reason" narrative="A description of the reason for the exception" expr="[Exception]" />
+      <input type="flag" name="Retry" friendlyname="Retry" narrative="Whether or not to retry the item, up to the maximum number of attempts specified for the queue. Optional - if not specified, the item will be retried" expr="False" />
+      <input type="flag" name="Keep Locked" friendlyname="Keep Locked" narrative="Whether or not the clone of the item should remain locked after the exception has been registered and the item is retried. Optional - default is False" expr="False" />
+    </inputs>
+    <outputs>
+      <output type="text" name="New Item ID" friendlyname="New Item ID" narrative="The Item ID of the newly cloned item. This item will be locked if 'Keep Locked' is True. This will be empty if no item was cloned (ie. the item was not retried." stage="" />
+    </outputs>
+    <onsuccess>43e354ee-0d7a-47be-b006-d779be6c297a</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Mark Exception" />
+  </stage>
+  <stage stageid="4a89f887-3b90-4741-8002-20725264fb27" name="Variavel" type="Block">
+    <subsheetid>4da591ae-d6f0-4fb5-916d-101c1807fa24</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-180" y="-45" w="60" h="45" />
+    <font family="Segoe UI" size="10" style="Regular" color="7FB2E5" />
+  </stage>
+  <stage stageid="38e8d447-f2f2-4ec2-99ec-f671a387cbf5" name="Mark Completed" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="165" y="225" />
+    <inputs>
+      <input type="text" name="Item ID" friendlyname="Item ID" expr="[Item ID]" />
+      <input type="collection" name="Dados" friendlyname="Dados" expr="[Data]" />
+    </inputs>
+    <onsuccess>5c7c216c-6107-49ae-8d2f-2937aec2cb15</onsuccess>
+    <processid>f0d8be35-ca0c-4667-9859-1ce362393bd2</processid>
+  </stage>
+  <stage stageid="39595540-0b5b-4bf6-bf21-3615ea4569fb" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="150" y="0" w="10" h="10" />
+    <onsuccess>7d3bbd79-7c87-456d-8141-fe9b8db7d478</onsuccess>
+  </stage>
+  <stage stageid="5c7c216c-6107-49ae-8d2f-2937aec2cb15" name="Anchor1" type="Anchor">
+    <loginhibit onsuccess="true" />
+    <display x="150" y="210" w="10" h="10" />
+    <onsuccess>1c6fd2ad-266d-47c5-b464-349d8773b43c</onsuccess>
+  </stage>
+  <stage stageid="ac79610b-ec0e-4316-9bba-655552769a20" name="Verificar Arquivo" type="SubSheetInfo">
+    <subsheetid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</subsheetid>
+    <display x="-240" y="-180" w="150" h="90" />
+  </stage>
+  <stage stageid="624f5fa2-931b-4c79-abfb-8d66038548ec" name="Start" type="Start">
+    <subsheetid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</subsheetid>
+    <display x="15" y="-135" />
+    <inputs>
+      <input type="collection" name="Dados" stage="Dados" />
+    </inputs>
+    <onsuccess>947f8ec1-09f9-497d-81a6-b3812b7d81f2</onsuccess>
+  </stage>
+  <stage stageid="947f8ec1-09f9-497d-81a6-b3812b7d81f2" name="Utility - File Management::File Exists" type="Action">
+    <subsheetid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-90" />
+    <inputs>
+      <input type="text" name="File Name" friendlyname="File Name" narrative="The name of the file to check" expr="[SicalcAA_Download] &amp; &quot;\&quot; &amp; [Dados.Arquivo de Saída]" />
+    </inputs>
+    <outputs>
+      <output type="flag" name="Exists" friendlyname="Exists" narrative="True if the file exists" stage="Existe?" />
+    </outputs>
+    <onsuccess>1c41a175-0c37-4d05-a877-2864032864fc</onsuccess>
+    <resource object="Utility - File Management" action="File Exists" />
+  </stage>
+  <stage stageid="cc60e8aa-8896-48f1-b303-9d714fd20e59" name="Existe?" type="Data">
+    <subsheetid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</subsheetid>
+    <display x="-150" y="-15" />
+    <datatype>flag</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1c41a175-0c37-4d05-a877-2864032864fc" name="Arquivo DARF existe?" type="Decision">
+    <subsheetid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</subsheetid>
+    <display x="15" y="-45" />
+    <decision expression="[Existe?]" />
+    <ontrue>d2f3be36-5a57-4a7c-91cd-ea83a4b86e63</ontrue>
+    <onfalse>fbc04186-ecd6-468e-bfd5-d2f89945c8d9</onfalse>
+  </stage>
+  <stage stageid="fbc04186-ecd6-468e-bfd5-d2f89945c8d9" name="Business Exception" type="Exception">
+    <subsheetid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</subsheetid>
+    <display x="105" y="-45" />
+    <exception localized="yes" type="Business Exception" detail="&quot;DARF não gerada&quot;" savescreencapture="yes" />
+  </stage>
+  <stage stageid="e2f9b310-71a5-4405-be21-869e91569910" name="End" type="End">
+    <subsheetid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</subsheetid>
+    <display x="15" y="60" />
+  </stage>
+  <stage stageid="71923d42-04df-4495-9330-302b750e8e6e" name="Item preenchido?" type="Decision">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="-105" />
+    <decision expression="[Dados do item.Item] &lt;&gt; &quot;&quot;" />
+    <ontrue>f853111f-89fa-4458-a9c2-e243aeb9558b</ontrue>
+    <onfalse>7b316cba-5f80-4d74-9f36-999853af71f3</onfalse>
+  </stage>
+  <stage stageid="7b316cba-5f80-4d74-9f36-999853af71f3" name="Business Exception" type="Exception">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="90" y="-105" />
+    <exception localized="yes" type="Business Exception" detail="&quot;Coluna Item vazia&quot;" />
+  </stage>
+  <stage stageid="f853111f-89fa-4458-a9c2-e243aeb9558b" name="Cod Receita preenchido?" type="Decision">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="-60" />
+    <decision expression="[Dados do item.Cod Receita] &lt;&gt; &quot;&quot;" />
+    <ontrue>90db192c-7305-4463-8d51-04f9c1a1c064</ontrue>
+    <onfalse>305fa3f7-96e9-48a7-b5a2-4169a668b60d</onfalse>
+  </stage>
+  <stage stageid="305fa3f7-96e9-48a7-b5a2-4169a668b60d" name="Business Exception" type="Exception">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="90" y="-60" />
+    <exception localized="yes" type="Business Exception" detail="&quot;Coluna Cod Receita vazia&quot;" />
+  </stage>
+  <stage stageid="90db192c-7305-4463-8d51-04f9c1a1c064" name="PA preenchido?" type="Decision">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="-15" />
+    <decision expression="[Dados do item.PA] &lt;&gt; &quot;&quot;" />
+    <ontrue>6785174f-14e6-4736-b780-437a3e24a474</ontrue>
+    <onfalse>af3aa8e2-7fea-4801-a880-55d9710c143b</onfalse>
+  </stage>
+  <stage stageid="af3aa8e2-7fea-4801-a880-55d9710c143b" name="Business Exception" type="Exception">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="90" y="-15" />
+    <exception localized="yes" type="Business Exception" detail="&quot;Coluna PA vazia&quot;" />
+  </stage>
+  <stage stageid="6785174f-14e6-4736-b780-437a3e24a474" name="Valor preenchido?" type="Decision">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="30" />
+    <decision expression="[Dados do item.Valor] &lt;&gt; &quot;&quot;" />
+    <ontrue>ce7640b5-c269-4c3f-8491-45f58f3bf41f</ontrue>
+    <onfalse>45dfc183-d0fc-42dd-ac05-5e89f59a1fed</onfalse>
+  </stage>
+  <stage stageid="45dfc183-d0fc-42dd-ac05-5e89f59a1fed" name="Business Exception" type="Exception">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="90" y="30" />
+    <exception localized="yes" type="Business Exception" detail="&quot;Coluna Valor vazia&quot;" />
+  </stage>
+  <stage stageid="ce7640b5-c269-4c3f-8491-45f58f3bf41f" name="Nome preenchido?" type="Decision">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="75" />
+    <decision expression="[Dados do item.Nome] &lt;&gt; &quot;&quot;" />
+    <ontrue>f96a9540-9af6-4468-b77a-8d4c71498f33</ontrue>
+    <onfalse>921dcef4-000b-4028-a060-cb6e00db0c22</onfalse>
+  </stage>
+  <stage stageid="921dcef4-000b-4028-a060-cb6e00db0c22" name="Business Exception" type="Exception">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="90" y="75" />
+    <exception localized="yes" type="Business Exception" detail="&quot;Coluna Nome vazia&quot;" />
+  </stage>
+  <stage stageid="f96a9540-9af6-4468-b77a-8d4c71498f33" name="Telefone preenchido?" type="Decision">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="120" />
+    <decision expression="[Dados do item.Telefone] &lt;&gt; &quot;&quot;" />
+    <ontrue>47eaa13f-d5cc-45f3-9089-9f46a4b1f23e</ontrue>
+    <onfalse>b4a2f618-1098-40d3-b8bc-feb238eae223</onfalse>
+  </stage>
+  <stage stageid="b4a2f618-1098-40d3-b8bc-feb238eae223" name="Business Exception" type="Exception">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="90" y="120" />
+    <exception localized="yes" type="Business Exception" detail="&quot;Coluna Telefone vazia&quot;" />
+  </stage>
+  <stage stageid="47eaa13f-d5cc-45f3-9089-9f46a4b1f23e" name="CPF/CNPJ preenchido?" type="Decision">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="165" />
+    <decision expression="[Dados do item.CPF/CNPJ] &lt;&gt; &quot;&quot;" />
+    <ontrue>ad6b75bb-6874-4765-86e8-e9fc4b4335f7</ontrue>
+    <onfalse>95b0de19-9879-4117-944a-6b5f1f91219a</onfalse>
+  </stage>
+  <stage stageid="95b0de19-9879-4117-944a-6b5f1f91219a" name="Business Exception" type="Exception">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="90" y="165" />
+    <exception localized="yes" type="Business Exception" detail="&quot;Coluna CPF/CNPJ vazia&quot;" />
+  </stage>
+  <stage stageid="ad6b75bb-6874-4765-86e8-e9fc4b4335f7" name="Referência preenchido?" type="Decision">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="210" />
+    <decision expression="[Dados do item.Referência] &lt;&gt; &quot;&quot;" />
+    <ontrue>b55575cf-9cb0-4896-8fcc-6146ad8d4702</ontrue>
+    <onfalse>d9c46521-efd1-41c0-b062-0a26209df010</onfalse>
+  </stage>
+  <stage stageid="d9c46521-efd1-41c0-b062-0a26209df010" name="Business Exception" type="Exception">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="90" y="210" />
+    <exception localized="yes" type="Business Exception" detail="&quot;Coluna Referência vazia&quot;" />
+  </stage>
+  <stage stageid="b55575cf-9cb0-4896-8fcc-6146ad8d4702" name="Arquivo de Saída preenchido?" type="Decision">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="15" y="255" />
+    <decision expression="[Dados do item.Arquivo de Saída] &lt;&gt; &quot;&quot;" />
+    <ontrue>c1fdffef-7d33-492c-9115-ab7b9b3699e5</ontrue>
+    <onfalse>533b3e82-a97d-48d0-bb68-97de16320757</onfalse>
+  </stage>
+  <stage stageid="533b3e82-a97d-48d0-bb68-97de16320757" name="Business Exception" type="Exception">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="90" y="255" />
+    <exception localized="yes" type="Business Exception" detail="&quot;Coluna Arquivo de Saída vazia&quot;" />
+  </stage>
+  <stage stageid="9c603064-b0aa-4de2-8627-d1f5f3a3739a" name="Utility - File Management::Move File" type="Action">
+    <subsheetid>f0fdd348-c66c-4466-819d-7a14df230729</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-60" />
+    <inputs>
+      <input type="text" name="File Path" friendlyname="File Path" narrative="The full path to the file to move" expr="[SicalcAA_Entrada] &amp; &quot;\Planilha_Entrada_SicalcAA.xlsx&quot;" />
+      <input type="text" name="Destination Path" friendlyname="Destination Path" narrative="The path to the folder to move the file to" expr="[SicalcAA_Saida] &amp; &quot;\PROCESSADA_&quot; &amp; FormatDateTime(Now(), &quot;yyyyMMddHHmmss&quot;) &amp; &quot;_Planilha_Entrada_SicalcAA.xlsx&quot;" />
+    </inputs>
+    <onsuccess>16a2afed-ade5-447e-bd7d-ca8daeab1789</onsuccess>
+    <resource object="Utility - File Management" action="Move File" />
+  </stage>
+  <stage stageid="6164325d-b35d-4cb3-a8b7-a6ed2c5f5838" name="Verificar cada item" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="135" y="-210" />
+    <inputs>
+      <input type="collection" name="Dados do item" friendlyname="Dados do item" expr="[Data]" />
+    </inputs>
+    <onsuccess>ff2eea8b-6499-40c3-a83a-ac27bb3d0a2a</onsuccess>
+    <processid>114e3453-1523-4006-8640-4a3044091481</processid>
+  </stage>
+  <stage stageid="d2f3be36-5a57-4a7c-91cd-ea83a4b86e63" name="Utility - File Management::Move File" type="Action">
+    <subsheetid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <inputs>
+      <input type="text" name="File Path" friendlyname="File Path" narrative="The full path to the file to move" expr="[SicalcAA_Download] &amp; &quot;\&quot; &amp; [Dados.Arquivo de Saída]" />
+      <input type="text" name="Destination Path" friendlyname="Destination Path" narrative="The path to the folder to move the file to" expr="[SicalcAA_Saida] &amp; &quot;\&quot; &amp; [Dados.Arquivo de Saída]" />
+    </inputs>
+    <onsuccess>e2f9b310-71a5-4405-be21-869e91569910</onsuccess>
+    <resource object="Utility - File Management" action="Move File" />
+  </stage>
+  <stage stageid="d5f6382f-b363-4324-98cb-479f50093075" name="Exception Detail" type="Data">
+    <display x="-150" y="135" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="2b7c1d8a-e109-46be-a7f5-b6affb0beb73" name="Exception Type" type="Data">
+    <display x="-135" y="90" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="230db7b7-23aa-417f-9c2f-5fd461497517" name="Item ID" type="Data">
+    <subsheetid>f0d8be35-ca0c-4667-9859-1ce362393bd2</subsheetid>
+    <display x="-150" y="-15" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1cb90cec-766a-4ad1-8cfb-e6d3cae9153e" name="Dados" type="Collection">
+    <subsheetid>f0d8be35-ca0c-4667-9859-1ce362393bd2</subsheetid>
+    <display x="-150" y="30" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="1d061c6a-7264-4635-9a03-a6e6a95acaf9" name="Item ID" type="Data">
+    <subsheetid>4da591ae-d6f0-4fb5-916d-101c1807fa24</subsheetid>
+    <display x="-135" y="-60" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c9838138-a2b2-4f72-8950-ac338f41faab" name="Exception" type="Data">
+    <subsheetid>4da591ae-d6f0-4fb5-916d-101c1807fa24</subsheetid>
+    <display x="-135" y="30" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c1d6091a-190f-4f82-8e26-6a79cfa080a9" name="Dados" type="Collection">
+    <subsheetid>4da591ae-d6f0-4fb5-916d-101c1807fa24</subsheetid>
+    <display x="-135" y="75" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="c6e53bc9-ee07-469d-9473-c9652661fe97" name="Dados" type="Collection">
+    <subsheetid>a7fc2f25-5fbc-4be1-b8fa-d86f3e84d505</subsheetid>
+    <display x="-150" y="-75" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="59a942e5-5f82-4a1f-9c72-66e3d420b423" name="Dados do item" type="Collection">
+    <subsheetid>114e3453-1523-4006-8640-4a3044091481</subsheetid>
+    <display x="-150" y="-60" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="efc29907-695c-4b1c-85ba-63c1fc20d6cd" name="Preencher Código Receita" type="Action">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-45" y="-30" />
+    <inputs>
+      <input type="text" name="CodReceita" friendlyname="CodReceita" expr="[CodReceita]" />
+      <input type="text" name="Nome" friendlyname="Nome" expr="[Nome]" />
+      <input type="text" name="Telefone " friendlyname="Telefone " expr="[Telefone]" />
+      <input type="text" name="PA" friendlyname="PA" expr="[PA]" />
+      <input type="text" name="CPF / CNPJ" friendlyname="CPF / CNPJ" expr="[CPF/CNPJ]" />
+      <input type="text" name="Referência" friendlyname="Referência" expr="[Referência]" />
+      <input type="text" name="ValorEmReais" friendlyname="ValorEmReais" expr="[ValorEmReais]" />
+      <input type="text" name="Arquivo de Saída" friendlyname="Arquivo de Saída" expr="[Arquivo de Saída]" />
+      <input type="text" name="codigo" friendlyname="codigo" expr="[codigo]" />
+    </inputs>
+    <onsuccess>73cdfdd0-4266-49e1-af40-1aefadb772f3</onsuccess>
+    <resource object="Sicalc_DARF" action="Preencher Código Receita" />
+  </stage>
+  <stage stageid="dc095aa6-831d-4664-8610-bcb3e73ca254" name="CodReceita" type="Data">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="180" y="-135" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ffcc4f86-8f7f-4e59-b815-c01a6af966fe" name="Nome" type="Data">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="90" y="-135" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="9b2af8f3-ee85-4a64-a22a-6362d0260eb2" name="Telefone" type="Data">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="135" y="-135" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a9edb187-cf0e-4e53-be52-33cf810b2a07" name="PA" type="Data">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <display x="45" y="-135" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="dd84b282-2fef-4777-90fe-82a3ec846cee" name="CPF/CNPJ" type="Data">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <display x="105" y="-180" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="664d91ba-f7a1-4544-995d-08a86153f5cd" name="Referência" type="Data">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <display x="-30" y="-180" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="51ceba07-4f4f-4945-b701-6e600eb14383" name="ValorEmReais" type="Data">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <display x="45" y="-180" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="ae3dc1b2-0a64-4d85-a85a-c6b44df37e75" name="Arquivo de Saída" type="Data">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <display x="45" y="-90" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a14a7010-10d0-428b-8fd6-ab6b9b391351" name="Preparar Próximo DARF" type="SubSheetInfo">
+    <subsheetid>c07a56d5-d89e-478c-af0c-70952cad7026</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="dd2c64d5-9273-4908-a3a4-fc7d14b3bb81" name="Start" type="Start">
+    <subsheetid>c07a56d5-d89e-478c-af0c-70952cad7026</subsheetid>
+    <display x="15" y="-105" />
+    <onsuccess>708163ae-1276-4622-86e5-8e9bf77dae37</onsuccess>
+  </stage>
+  <stage stageid="d6333a50-bb6d-4259-b561-5f4896fce825" name="End" type="End">
+    <subsheetid>c07a56d5-d89e-478c-af0c-70952cad7026</subsheetid>
+    <display x="15" y="60" />
+  </stage>
+  <stage stageid="1c6fd2ad-266d-47c5-b464-349d8773b43c" name="Preparar Próximo DARF" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="465" y="-210" />
+    <onsuccess>39595540-0b5b-4bf6-bf21-3615ea4569fb</onsuccess>
+    <processid>c07a56d5-d89e-478c-af0c-70952cad7026</processid>
+  </stage>
+  <stage stageid="708163ae-1276-4622-86e5-8e9bf77dae37" name="Sicalc_DARF::Preparar Próximo DARF" type="Action">
+    <subsheetid>c07a56d5-d89e-478c-af0c-70952cad7026</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <onsuccess>d6333a50-bb6d-4259-b561-5f4896fce825</onsuccess>
+    <resource object="Sicalc_DARF" action="Preparar Próximo DARF" />
+  </stage>
+  <stage stageid="f1f1e8cb-0d34-4452-80ed-ba9fedada285" name="PrimeiroItem" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-150" y="225" />
+    <datatype>flag</datatype>
+    <initialvalue>True</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="8db547ec-639d-41a5-8fb9-35c82689742c" name="codigo" type="Data">
+    <subsheetid>006fb2e9-6bef-4efa-87b4-f3c0e1afb42a</subsheetid>
+    <display x="-45" y="-150" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="6b94be82-2c69-4189-8706-510d9e3f9aff" name="Attempts" type="Data">
+    <display x="-60" y="0" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="d299c316-c635-4556-8636-b6c2d64694f9" name="Esclarecimento ao Contribuinte" type="SubSheetInfo">
+    <subsheetid>7a5c2a58-bc4d-43ba-bc6e-32fcb7b8d8d5</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="9569a911-b55d-4efc-acae-02441b67c80b" name="Start" type="Start">
+    <subsheetid>7a5c2a58-bc4d-43ba-bc6e-32fcb7b8d8d5</subsheetid>
+    <display x="15" y="-90" />
+    <inputs>
+      <input type="text" name="CodReceita" stage="CodReceita" />
+    </inputs>
+    <onsuccess>d6beb708-ead1-420d-ad95-71c02fc0ad07</onsuccess>
+  </stage>
+  <stage stageid="7c6c00fc-3477-4393-b6da-893414a32774" name="End" type="End">
+    <subsheetid>7a5c2a58-bc4d-43ba-bc6e-32fcb7b8d8d5</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="b86df7e0-aaa3-4f46-9a64-d6cdf1c5807f" name="Codigo Receita" type="Action">
+    <subsheetid>7a5c2a58-bc4d-43ba-bc6e-32fcb7b8d8d5</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="30" />
+    <inputs>
+      <input type="text" name="CodReceita" friendlyname="CodReceita" expr="[CodReceita]" />
+    </inputs>
+    <onsuccess>7c6c00fc-3477-4393-b6da-893414a32774</onsuccess>
+    <resource object="Sicalc_DARF" action="Codigo Receita" />
+  </stage>
+  <stage stageid="d6beb708-ead1-420d-ad95-71c02fc0ad07" name="Esclarecimento ao Contribuinte" type="Action">
+    <subsheetid>7a5c2a58-bc4d-43ba-bc6e-32fcb7b8d8d5</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-30" />
+    <onsuccess>b86df7e0-aaa3-4f46-9a64-d6cdf1c5807f</onsuccess>
+    <resource object="Sicalc_DARF" action="Esclarecimento ao Contribuinte" />
+  </stage>
+  <stage stageid="ebaa4f73-6321-4aca-a25c-c89feb9887fb" name="Esclarecimento ao Contribuinte" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <inputs>
+      <input type="text" name="CodReceita" friendlyname="CodReceita" expr="[Data.Cod Receita]" />
+    </inputs>
+    <onsuccess>fac8e0a0-303b-4c6d-a9e8-89196d4e5658</onsuccess>
+    <processid>7a5c2a58-bc4d-43ba-bc6e-32fcb7b8d8d5</processid>
+  </stage>
+  <stage stageid="4bda7a64-33e8-493e-9126-af9cc219eb59" name="CodReceita" type="Data">
+    <subsheetid>7a5c2a58-bc4d-43ba-bc6e-32fcb7b8d8d5</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="120" y="-90" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="434aa003-397d-4613-ac27-6ea19b69e014" name="CodReceita" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-150" y="270" />
+    <datatype>time</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3342285d-8aec-489b-837e-3cb6e6ef5e51" name="Work Queues::Get Next Item" type="Action">
+    <narrative>This action gets the next item to be worked from the queue, returning its details and locking it so no other case can work it.
+
+Items with higher priorities (lower numerical value) are processed first. Where the priority is the same, the next item is the one that has been in the queue the longest,  is not already locked, and is not already completed.
+
+The Item ID returned is used to make further calls to update the work status for that item. It may be empty, in which case there are no items available. This can mean either a) the queue is empty, or b) the queue is not running. This mechanism can be used to cleanly stop all processes working a particular queue at the end of the next case. Items that have a 'deferred' time set will not be returned unless that time has been reached.</narrative>
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="text" name="Queue Name" friendlyname="Queue Name" narrative="The name of the queue" expr="[Nome da Fila]" />
+      <input type="text" name="Key Filter" friendlyname="Key Filter" narrative="Optionally, a key value to filter by. Only items with this key value will be considered." expr="" />
+      <input type="text" name="Tag Filter" friendlyname="Tag Filter" narrative="Optionally, a tag mask to filter by. This can consist of any number of tag searches - each term can be separated by a semi-colon and they are all applied to the search (ie. they are AND'ed terms not OR'ed terms). For example, &quot;Account: Joint; -Balance: Overdrawn; Card: *Visa*&quot; will include any items which match all the terms, ie. every item must have an 'Account: Joint' tag applied, no item can have a 'Balance: Overdrawn' tag applied, every item must have a tag applied which starts with 'Card: ' and then contains the text 'Visa'." expr="" />
+      <input type="text" name="Sort Order" friendlyname="Sort Order" narrative="Sort order method (Priority, SLA, PriorityAndSLA)" lookupValue="Priority" lookupType="WorkQueueSortTypes" />
+    </inputs>
+    <outputs>
+      <output type="text" name="Item ID" friendlyname="Item ID" narrative="The ID of the item retrieved - empty if there are none available." stage="Item ID" />
+      <output type="collection" name="Data" friendlyname="Data" narrative="The data associated with the item - a single collection row." stage="Data" />
+      <output type="text" name="Status" friendlyname="Status" narrative="The status of the item." stage="Status" />
+      <output type="number" name="Attempts" friendlyname="Attempts" narrative="The number of attempts already made to work this item." stage="" />
+    </outputs>
+    <onsuccess>ebaa4f73-6321-4aca-a25c-c89feb9887fb</onsuccess>
+    <resource object="Blueprism.Automate.clsWorkQueuesActions" action="Get Next Item" />
+  </stage>
+  <stage stageid="78c36d94-b87d-436a-95d7-163d6d0fb31c" name="Atualizar Status" type="SubSheetInfo">
+    <subsheetid>d3fbe149-267d-4436-920f-5b30553b7dae</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="c8a2ef93-9233-43aa-a3d1-8ac4f5f6ce45" name="Start" type="Start">
+    <subsheetid>d3fbe149-267d-4436-920f-5b30553b7dae</subsheetid>
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="collection" name="Data" stage="Data" />
+      <input type="number" name="handle" stage="handle" />
+    </inputs>
+    <onsuccess>9aa30af6-2362-48d1-95ba-fb8f86a5f03c</onsuccess>
+  </stage>
+  <stage stageid="87d7222b-3f6e-4084-9f11-c0ca86cadde7" name="End" type="End">
+    <subsheetid>d3fbe149-267d-4436-920f-5b30553b7dae</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="9aa30af6-2362-48d1-95ba-fb8f86a5f03c" name="Atualizar Status" type="Action">
+    <subsheetid>d3fbe149-267d-4436-920f-5b30553b7dae</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-15" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the required cell value should be set. The default of zero indicates the currently active instance." expr="[ExcelHandle]" />
+      <input type="text" name="Cell Reference" friendlyname="Cell Reference" narrative="The reference on the speficied sheet identifying the cell which should be set." expr="&quot;K&quot; &amp; [LinhaExcel]" />
+      <input type="text" name="Value" friendlyname="Value" narrative="The value to which the specified cell should be set." expr="&quot;Processada&quot;" />
+      <input type="flag" name="Force Date As String" friendlyname="Force Date As String" narrative="If [Force Date As String] is True and [value] is a valid DateTime and the active cell ([cellref]) is formatted in Excel as a Text type, this will force the [value] to be written as a string exactly as provided. The computer's date formatting will not interfere with the display or formatting of the [value]. If [Force Date As String] is False (the default), [value] will either be converted to a DateTime type (following the computer's date format setting) if it is a valid DateTime (else it will be written as a string)." expr="False" />
+    </inputs>
+    <onsuccess>9befc4a9-926b-49e2-8984-eca2ec1a4534</onsuccess>
+    <resource object="MS Excel VBO" action="Set Cell Value" />
+  </stage>
+  <stage stageid="9befc4a9-926b-49e2-8984-eca2ec1a4534" name="Incrementar Linha" type="Calculation">
+    <subsheetid>d3fbe149-267d-4436-920f-5b30553b7dae</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="30" />
+    <onsuccess>87d7222b-3f6e-4084-9f11-c0ca86cadde7</onsuccess>
+    <calculation expression="[LinhaExcel]+1" stage="LinhaExcel" />
+  </stage>
+  <stage stageid="83444999-9ae5-493d-8180-b2eac0a4ae82" name="Atualizar Status" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="360" y="225" />
+    <inputs>
+      <input type="collection" name="Data" friendlyname="Data" expr="[Data]" />
+      <input type="number" name="handle" friendlyname="handle" expr="[ExcelHandle] " />
+    </inputs>
+    <onsuccess>40ba01ab-dcb2-486e-80bd-b438ed867a85</onsuccess>
+    <processid>d3fbe149-267d-4436-920f-5b30553b7dae</processid>
+  </stage>
+  <stage stageid="7989ec6e-dac9-40da-8c08-ae14f1b98e34" name="Data" type="Collection">
+    <subsheetid>d3fbe149-267d-4436-920f-5b30553b7dae</subsheetid>
+    <display x="90" y="-105" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a83c4158-8753-4f22-9e84-345a21ae0871" name="handle" type="Data">
+    <subsheetid>d3fbe149-267d-4436-920f-5b30553b7dae</subsheetid>
+    <display x="-60" y="-105" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="f503debd-07c8-4b4d-9702-e6df1f3a9ffa" name="ExcelHandle" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-150" y="315" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <alwaysinit />
+  </stage>
+  <stage stageid="66122f86-2f2d-4f04-b841-9314d9828f7a" name="LinhaExcel" type="Data">
+    <loginhibit onsuccess="true" />
+    <display x="-150" y="360" />
+    <datatype>number</datatype>
+    <initialvalue>2</initialvalue>
+    <alwaysinit />
+  </stage>
+  <stage stageid="40ba01ab-dcb2-486e-80bd-b438ed867a85" name="MS Excel VBO::Save Workbook" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="270" y="225" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the workbook which should be saved resides. The default of zero indicates the currently active instance." expr="[ExcelHandle]" />
+      <input type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name of the workbook which should be saved" expr="" />
+      <input type="number" name="TitmeOut" friendlyname="TitmeOut" narrative="The timeout value. Default 30 Minimum is 10 seconds." expr="" />
+    </inputs>
+    <onsuccess>38e8d447-f2f2-4ec2-99ec-f671a387cbf5</onsuccess>
+    <resource object="MS Excel VBO" action="Save Workbook" />
+  </stage>
+  <stage stageid="f819d447-c858-4c15-887c-61efb3761396" name="Atualizar Status Exception" type="SubSheet">
+    <loginhibit onsuccess="true" />
+    <display x="495" y="0" />
+    <inputs>
+      <input type="collection" name="Data" friendlyname="Data" expr="[Data]" />
+      <input type="number" name="handle" friendlyname="handle" expr="[ExcelHandle] " />
+    </inputs>
+    <onsuccess>166b0f5e-8156-403b-a8c8-a84deb1f6558</onsuccess>
+    <processid>8a50fa40-0c60-4747-8b21-52373279b428</processid>
+  </stage>
+  <stage stageid="166b0f5e-8156-403b-a8c8-a84deb1f6558" name="MS Excel VBO::Save Workbook" type="Action">
+    <loginhibit onsuccess="true" />
+    <display x="495" y="-90" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the workbook which should be saved resides. The default of zero indicates the currently active instance." expr="[ExcelHandle]" />
+      <input type="text" name="Workbook Name" friendlyname="Workbook Name" narrative="The name of the workbook which should be saved" expr="" />
+      <input type="number" name="TitmeOut" friendlyname="TitmeOut" narrative="The timeout value. Default 30 Minimum is 10 seconds." expr="" />
+    </inputs>
+    <onsuccess>3f88e4e6-5429-453e-b965-ad0c812982be</onsuccess>
+    <resource object="MS Excel VBO" action="Save Workbook" />
+  </stage>
+  <stage stageid="44645148-9948-4ae4-8412-d103ae675c3b" name="Atualizar Status - Exception" type="SubSheetInfo">
+    <subsheetid>8a50fa40-0c60-4747-8b21-52373279b428</subsheetid>
+    <display x="-195" y="-105" w="150" h="90" />
+  </stage>
+  <stage stageid="05f1ed52-a2f9-482b-a199-5acdeb4d8d84" name="Start" type="Start">
+    <subsheetid>8a50fa40-0c60-4747-8b21-52373279b428</subsheetid>
+    <display x="15" y="-105" />
+    <inputs>
+      <input type="collection" name="Data" stage="Data" />
+      <input type="number" name="handle" stage="handle" />
+    </inputs>
+    <onsuccess>944c01ec-51ca-4157-abb1-c1af169ca06f</onsuccess>
+  </stage>
+  <stage stageid="c9e2ea3a-45e2-4667-848b-d68bd2759070" name="End" type="End">
+    <subsheetid>8a50fa40-0c60-4747-8b21-52373279b428</subsheetid>
+    <display x="15" y="90" />
+  </stage>
+  <stage stageid="944c01ec-51ca-4157-abb1-c1af169ca06f" name="Atualizar Status - Exception" type="Action">
+    <subsheetid>8a50fa40-0c60-4747-8b21-52373279b428</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="-45" />
+    <inputs>
+      <input type="number" name="handle" friendlyname="handle" narrative="The integer handle identifying the instance on which the required cell value should be set. The default of zero indicates the currently active instance." expr="[ExcelHandle]" />
+      <input type="text" name="Cell Reference" friendlyname="Cell Reference" narrative="The reference on the speficied sheet identifying the cell which should be set." expr="&quot;K&quot; &amp; [LinhaExcel]" />
+      <input type="text" name="Value" friendlyname="Value" narrative="The value to which the specified cell should be set." expr="&quot;Exceção: &quot; &amp; [Exception Detail]" />
+      <input type="flag" name="Force Date As String" friendlyname="Force Date As String" narrative="If [Force Date As String] is True and [value] is a valid DateTime and the active cell ([cellref]) is formatted in Excel as a Text type, this will force the [value] to be written as a string exactly as provided. The computer's date formatting will not interfere with the display or formatting of the [value]. If [Force Date As String] is False (the default), [value] will either be converted to a DateTime type (following the computer's date format setting) if it is a valid DateTime (else it will be written as a string)." expr="False" />
+    </inputs>
+    <onsuccess>ce14c66c-fa39-456a-87c7-e63c301369e2</onsuccess>
+    <resource object="MS Excel VBO" action="Set Cell Value" />
+  </stage>
+  <stage stageid="ce14c66c-fa39-456a-87c7-e63c301369e2" name="Incrementar Linha" type="Calculation">
+    <subsheetid>8a50fa40-0c60-4747-8b21-52373279b428</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="30" />
+    <onsuccess>c9e2ea3a-45e2-4667-848b-d68bd2759070</onsuccess>
+    <calculation expression="[LinhaExcel]+1" stage="LinhaExcel" />
+  </stage>
+  <stage stageid="57dfe61c-bc2a-4261-b2a8-7a04d00539b9" name="Data" type="Collection">
+    <subsheetid>8a50fa40-0c60-4747-8b21-52373279b428</subsheetid>
+    <display x="90" y="-105" />
+    <datatype>collection</datatype>
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="769ebf33-a5f9-4bf8-ac8a-a585471aec00" name="handle" type="Data">
+    <subsheetid>8a50fa40-0c60-4747-8b21-52373279b428</subsheetid>
+    <display x="-60" y="-105" />
+    <datatype>number</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="13c4b57e-0d83-45e3-a365-3ebe505a9a29" name="AttachmentPath" type="Data">
+    <subsheetid>407e9615-acbc-48f2-b6a1-f7fa4ad948d8</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-120" y="0" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="a81145f3-0d05-453f-9289-7561eeba99a3" name="ListaPDF" type="Data">
+    <subsheetid>407e9615-acbc-48f2-b6a1-f7fa4ad948d8</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="-120" y="60" />
+    <datatype>text</datatype>
+    <initialvalue />
+    <private />
+    <alwaysinit />
+  </stage>
+  <stage stageid="3ba7d85e-af4b-44bd-9710-75ccc7abd4a7" name="Sicalc_DARF::Utility - Email" type="Action">
+    <subsheetid>407e9615-acbc-48f2-b6a1-f7fa4ad948d8</subsheetid>
+    <loginhibit onsuccess="true" />
+    <display x="15" y="15" />
+    <inputs>
+      <input type="text" name="AttachmentPath" friendlyname="AttachmentPath" expr="[ListaPDF]" />
+    </inputs>
+    <onsuccess>f3bd5bf5-0914-4661-935b-30a9ef5a62e0</onsuccess>
+    <resource object="Sicalc_DARF" action="Utility - Email" />
+  </stage>
+</process>
