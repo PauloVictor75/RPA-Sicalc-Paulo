@@ -12,6 +12,16 @@ Projeto final da Pós-graduação em Automação Robótica e Agentes Inteligente
    - marca o item como concluído ou como exceção na fila.
 3. Ao final, envia um e-mail de resumo com os PDFs anexados e arquiva a planilha com o prefixo `PROCESSADA_` e data/hora.
 
+## Telas
+
+**Processo principal (Main Page):** configurações iniciais, login, laço da Work Queue, bloco de exceção com Recover/Resume, envio de e-mail e arquivamento.
+
+![Process Studio - Main Page do processo RPA Sicalc](imagens/01-processo-main-page.png)
+
+**Business Object Sicalc_DARF, página Preencher Código Receita:** preenchimento dos campos no SicalcAA e tratamento do popup "PA não é dia útil" como exceção de negócio.
+
+![Object Studio - página Preencher Código Receita](imagens/02-objeto-preencher-codigo-receita.png)
+
 ## Tratamento de exceções
 
 - **Exceção de negócio:** o item viola uma regra do processo (por exemplo, o PA não é dia útil). O robô gera uma *Business Exception* com o motivo e continua.
@@ -30,7 +40,8 @@ Mais detalhes no PDF [Decisões de Arquitetura](<Decisoes_Arquitetura_RPA_Sicalc
 | `BPA Object - Sicalc_DARF_Paulo.bpobject` | Business Object que interage com o SicalcAA |
 | `Microsoft Outlook Email VBO (NetOffice) v10.4.7.bpobject` | VBO usado para enviar o e-mail de resumo |
 | `SicalcAA/Entrada/Planilha_Entrada_SicalcAA.xlsx` | Planilha de exemplo com dados fictícios |
-| `SicalcAA/Saida`, `SicalcAA/Download` | Pastas de saída dos PDFs e downloads |
+| `SicalcAA/Saida`, `SicalcAA/Download` | Pastas de saída dos PDFs e downloads (criadas na sua máquina; não vão para o GitHub por estarem vazias) |
+| `imagens/` | Prints do Process Studio e do Object Studio |
 
 ## Como executar
 
