@@ -22,6 +22,22 @@ Projeto final da Pós-graduação em Automação Robótica e Agentes Inteligente
 
 ![Object Studio - página Preencher Código Receita](imagens/02-objeto-preencher-codigo-receita.png)
 
+## Resultado da execução
+
+Execução com 10 DARFs de exemplo: 5 processados e 5 rejeitados como exceção de negócio, porque o período de apuração não era dia útil.
+
+**Planilha antes:** todos os itens com status `Pendente`.
+
+![Planilha de entrada antes da execução](imagens/03-planilha-antes.png)
+
+**Planilha depois:** cada linha terminou como `Processada` ou `Exceção: <motivo>`. Nenhum item ficou pendente.
+
+![Planilha após a execução com status preenchido](imagens/04-planilha-depois.png)
+
+**Pasta de saída:** os 5 PDFs gerados e a planilha arquivada com o prefixo `PROCESSADA_` e data/hora.
+
+![Pasta de saída com os DARFs em PDF e a planilha arquivada](imagens/05-pasta-saida-pdfs.png)
+
 ## Tratamento de exceções
 
 - **Exceção de negócio:** o item viola uma regra do processo (por exemplo, o PA não é dia útil). O robô gera uma *Business Exception* com o motivo e continua.
@@ -41,7 +57,7 @@ Mais detalhes no PDF [Decisões de Arquitetura](<Decisoes_Arquitetura_RPA_Sicalc
 | `Microsoft Outlook Email VBO (NetOffice) v10.4.7.bpobject` | VBO usado para enviar o e-mail de resumo |
 | `SicalcAA/Entrada/Planilha_Entrada_SicalcAA.xlsx` | Planilha de exemplo com dados fictícios |
 | `SicalcAA/Saida`, `SicalcAA/Download` | Pastas de saída dos PDFs e downloads (criadas na sua máquina; não vão para o GitHub por estarem vazias) |
-| `imagens/` | Prints do Process Studio e do Object Studio |
+| `imagens/` | Prints do Process Studio, do Object Studio e do resultado da execução |
 
 ## Como executar
 
