@@ -2,6 +2,12 @@
 
 Projeto final da Pós-graduação em Automação Robótica e Agentes Inteligentes (UNIFOR). É um robô em **Blue Prism Enterprise 7.5.1** que lê uma planilha de DARFs, preenche cada um no SicalcAA, salva os PDFs, atualiza o status na planilha e envia um resumo por e-mail com os arquivos anexados.
 
+## Demonstração
+
+Execução completa do robô (acelerada 16x): SicalcAA e Process Studio em cima, planilha sendo atualizada embaixo.
+
+![Demonstração da automação](imagens/demonstracao.gif)
+
 ## O que o robô faz
 
 1. Lê a planilha de entrada (aba `Dados_DARF`) e carrega os itens na Work Queue **RPA Sicalc - Itens**.
@@ -57,7 +63,7 @@ Mais detalhes no PDF [Decisões de Arquitetura](<Decisoes_Arquitetura_RPA_Sicalc
 | `Microsoft Outlook Email VBO (NetOffice) v10.4.7.bpobject` | VBO usado para enviar o e-mail de resumo |
 | `SicalcAA/Entrada/Planilha_Entrada_SicalcAA.xlsx` | Planilha de exemplo com dados fictícios |
 | `SicalcAA/Saida`, `SicalcAA/Download` | Pastas de saída dos PDFs e downloads (criadas na sua máquina; não vão para o GitHub por estarem vazias) |
-| `imagens/` | Prints do Process Studio, do Object Studio e do resultado da execução |
+| `imagens/` | GIF da execução e prints do Process Studio, do Object Studio e do resultado |
 
 ## Como executar
 
